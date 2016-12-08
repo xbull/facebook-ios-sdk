@@ -59,10 +59,11 @@ static FBSDKSystemAccountStoreAdapter *_singletonInstance = nil;
 
 - (ACAccountStore *)accountStore
 {
-  if (_accountStore == nil) {
+  return nil;
+  /*if (_accountStore == nil) {
     _accountStore = [[fbsdkdfl_ACAccountStoreClass() alloc] init];
   }
-  return _accountStore;
+  return _accountStore;*/
 }
 
 - (ACAccountType *)accountType
